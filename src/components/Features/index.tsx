@@ -29,7 +29,7 @@ const Features = () => {
                   Why choose Australia Wide Nursing Agency?
                 </h3>
               </div>
-              <p className="leading-relaxed text-gray-700 dark:text-white">
+              <p className="leading-relaxed text-gray-700">
                 At Australia Wide Nursing Agency, we pride ourselves on being
                 your premier choice for healthcare staffing solutions. Our
                 competitive fees make us an attractive option for both
