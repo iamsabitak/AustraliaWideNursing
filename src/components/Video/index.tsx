@@ -1,69 +1,68 @@
 "use client";
 
-import VideoModal from "@/components/video-modal";
-import Image from "next/image";
-import { useState } from "react";
-import SectionTitle from "../Common/SectionTitle";
+import { FC } from "react";
+import {
+  FaUserMd,
+  FaClipboardCheck,
+  FaCheckCircle,
+  FaUserFriends,
+  FaHeartbeat,
+  FaSyncAlt,
+} from "react-icons/fa";
 
-export default function Video() {
-  const [isOpen, setOpen] = useState(false);
+const features = [
+  {
+    icon: <FaUserMd size={32} />,
+    title: "Highly qualified professionals",
+  },
+  {
+    icon: <FaCheckCircle size={32} />,
+    title: "Ready to contribute from day one",
+  },
+  {
+    icon: <FaClipboardCheck size={32} />,
+    title: "Thoroughly vetted candidates",
+  },
+  {
+    icon: <FaHeartbeat size={32} />,
+    title: "Expertise in various healthcare specialties",
+  },
+  {
+    icon: <FaUserFriends size={32} />,
+    title: "Reliable and dependable team members",
+  },
+  {
+    icon: <FaSyncAlt size={32} />,
+    title: "Seamless integration into your existing healthcare team",
+  },
+];
 
+const FeatureGrid: FC = () => {
   return (
-    <>
-      <section className="relative z-10 py-16 md:py-20 lg:py-28">
-        <div className="container">
-          <SectionTitle
-            title="We are ready to help"
-            paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
-            center
-            mb="80px"
-          />
-        </div>
-        <div className="relative overflow-hidden">
-          <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4">
-              <div className="mx-auto max-w-[770px] overflow-hidden rounded-md">
-                <div className="relative aspect-77/40 items-center justify-center">
-                  <Image
-                    src="/images/video/image.png"
-                    alt="video image"
-                    className="object-cover"
-                    fill
-                  />
-                  <div className="absolute top-0 right-0 flex h-full w-full items-center justify-center">
-                    <button
-                      aria-label="video play button"
-                      onClick={() => setOpen(true)}
-                      className="text-primary flex h-[70px] w-[70px] items-center justify-center rounded-full bg-white/75 transition hover:bg-white"
-                    >
-                      <svg
-                        width="16"
-                        height="18"
-                        viewBox="0 0 16 18"
-                        className="fill-current"
-                      >
-                        <path d="M15.5 8.13397C16.1667 8.51888 16.1667 9.48112 15.5 9.86602L2 17.6603C1.33333 18.0452 0.499999 17.564 0.499999 16.7942L0.5 1.20577C0.5 0.43597 1.33333 -0.0451549 2 0.339745L15.5 8.13397Z" />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
+    <section className="py-16 md:py-20 lg:py-16">
+      <div className="container mx-auto px-4 text-center">
+        <h2 className="mx-auto mb-4 max-w-4xl text-center text-3xl font-medium dark:text-white">
+          Our commitment to quality & reliability ensures that you receive
+          top-notch professionals for your Healthcare Team. Here's what you can
+          expect
+        </h2>
+
+        <div className="mt-15 grid grid-cols-1 gap-6 md:grid-cols-3">
+          {features.map((feature, index) => (
+            <div
+              key={index}
+              className="dark:bg-dark h-44 rounded-lg bg-gray-100 p-6 shadow-md transition-transform hover:scale-105 dark:text-white"
+            >
+              <div className="mb-4 flex justify-center text-blue-700">
+                {feature.icon}
               </div>
+              <h3 className="text-lg font-semibold">{feature.title}</h3>
             </div>
-          </div>
-
-          <div className="absolute right-0 bottom-0 left-0 z-[-1] h-full w-full bg-[url(/images/video/shape.svg)] bg-cover bg-center bg-no-repeat">
-            {/* <div className="absolute bottom-0 left-0 right-0 z-[-1] "> */}
-            {/* <img src="/images/video/shape.svg" alt="shape" className="w-full" /> */}
-          </div>
+          ))}
         </div>
-      </section>
-
-      <VideoModal
-        isOpen={isOpen}
-        onClose={() => setOpen(false)}
-        channel="youtube"
-        videoId="L61p2uyiMSo"
-      />
-    </>
+      </div>
+    </section>
   );
 };
+
+export default FeatureGrid;

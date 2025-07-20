@@ -1,22 +1,58 @@
-import SectionTitle from "../Common/SectionTitle";
-import SingleFeature from "./SingleFeature";
-import featuresData from "./featuresData";
+"use client";
+import Image from "next/image";
+import { useState } from "react";
 
 const Features = () => {
+  const [search, setSearch] = useState("");
+
   return (
     <>
-      <section id="features" className="py-16 md:py-20 lg:py-28">
-        <div className="container">
-          <SectionTitle
-            title="Main Features"
-            paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
-            center
-          />
+      <section id="features" className="py-16 md:py-20 lg:py-16">
+        <div className="container mx-auto px-4">
+          {/* Title and Subtitle */}
+          <div className="mb-12 text-center">
+            <h2 className="text-3xl font-bold text-blue-700 md:text-4xl">
+              Welcome to Australia Wide Nursing
+            </h2>
+            <p className="mt-2 text-gray-600 dark:text-white">
+              Your Trusted Partner in Providing Exceptional Nurse Staffing
+              Solutions for Aged Care and Hospital Settings Across Australia.
+            </p>
+          </div>
 
-          <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
-            {featuresData.map((feature) => (
-              <SingleFeature key={feature.id} feature={feature} />
-            ))}
+          {/* Content Section */}
+          <div className="flex flex-col items-center gap-12 lg:flex-row">
+            {/* Text */}
+            <div className="lg:w-1/2">
+              <div className="border-primary mb-4 border-l-4 pl-4">
+                <h3 className="text-2xl font-bold">
+                  Why choose Australia Wide Nursing Agency?
+                </h3>
+              </div>
+              <p className="leading-relaxed text-gray-700 dark:text-white">
+                At Australia Wide Nursing Agency, we pride ourselves on being
+                your premier choice for healthcare staffing solutions. Our
+                competitive fees make us an attractive option for both
+                healthcare facilities and professionals alike. With an extensive
+                database of experienced staff across Queensland, Western
+                Australia, and Victoria, we're well-equipped to meet your
+                staffing needs promptly and efficiently. We specialise in
+                placing a wide range of healthcare roles, including Registered
+                Nurses (RNs), Enrolled Nurses (ENs), and Assistants in Nursing
+                (AINs).
+              </p>
+            </div>
+
+            {/* Image */}
+            <div className="lg:w-1/2">
+              <Image
+                src="/file.svg" // Change this to the correct path like /images/about-nursing.png
+                alt="Nursing Care"
+                width={600}
+                height={400}
+                className="h-auto w-full rounded object-cover shadow-md"
+              />
+            </div>
           </div>
         </div>
       </section>

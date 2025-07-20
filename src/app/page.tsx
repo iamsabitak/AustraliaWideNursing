@@ -1,7 +1,3 @@
-import AboutSectionOne from "@/components/About/AboutSectionOne";
-import AboutSectionTwo from "@/components/About/AboutSectionTwo";
-import Blog from "@/components/Blog";
-import Brands from "@/components/Brands";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Contact from "@/components/Contact";
 import Features from "@/components/Features";
@@ -12,9 +8,9 @@ import Video from "@/components/Video";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Free Next.js Template for Startup and SaaS",
-  description: "This is Home for Startup Nextjs Template",
-  // other metadata
+  title: "Australia Wide Nursing Agency",
+  description:
+    "Connecting healthcare professionals with top nursing opportunities across Australia.",
 };
 
 export default function Home() {
@@ -24,12 +20,8 @@ export default function Home() {
       <Hero />
       <Features />
       <Video />
-      <Brands />
-      <AboutSectionOne />
-      <AboutSectionTwo />
       <Testimonials />
       <Pricing />
-      <Blog />
       <Contact />
     </>
   );

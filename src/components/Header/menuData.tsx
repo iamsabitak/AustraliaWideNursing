@@ -9,76 +9,84 @@ const menuData: Menu[] = [
   },
   {
     id: 2,
-    title: "About",
+    title: "About Us",
     path: "/about",
     newTab: false,
   },
+
   {
-    id: 33,
+    id: 3,
+    title: " Employers",
+    newTab: false,
+    submenu: [
+      {
+        id: 31,
+        title: "Registered Nurses",
+        path: "/RegisteredNurses",
+        newTab: false,
+      },
+      {
+        id: 32,
+        title: "Specialised Nurses",
+        path: "/SpecialisedNurses",
+        newTab: false,
+      },
+      {
+        id: 33,
+        title: "Rural and Remote Nurses",
+        path: "/RuralRemoteNurses",
+        newTab: false,
+      },
+      {
+        id: 34,
+        title: "Enrolled Nurses",
+        path: "/EnrolledNurses",
+        newTab: false,
+      },
+      {
+        id: 35,
+        title: "Assistants in Nursing",
+        path: "/AssistantsinNursing",
+        newTab: false,
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "Job Seekers",
+    newTab: false,
+    submenu: [
+      {
+        id: 41,
+        title: " Registered Nurse",
+        path: "/",
+        newTab: false,
+      },
+      {
+        id: 42,
+        title: "Enrolled Nurse",
+        path: "/",
+        newTab: false,
+      },
+      {
+        id: 43,
+        title: "AIN",
+        path: "/",
+        newTab: false,
+      },
+    ],
+  },
+  {
+    id: 5,
     title: "Blog",
     path: "/blog",
     newTab: false,
   },
   {
-    id: 3,
-    title: "Support",
+    id: 6,
+    title: "Contact Us",
     path: "/contact",
     newTab: false,
-  },
-  {
-    id: 4,
-    title: "Pages",
-    newTab: false,
-    submenu: [
-      {
-        id: 41,
-        title: "About Page",
-        path: "/about",
-        newTab: false,
-      },
-      {
-        id: 42,
-        title: "Contact Page",
-        path: "/contact",
-        newTab: false,
-      },
-      {
-        id: 43,
-        title: "Blog Grid Page",
-        path: "/blog",
-        newTab: false,
-      },
-      {
-        id: 44,
-        title: "Blog Sidebar Page",
-        path: "/blog-sidebar",
-        newTab: false,
-      },
-      {
-        id: 45,
-        title: "Blog Details Page",
-        path: "/blog-details",
-        newTab: false,
-      },
-      {
-        id: 46,
-        title: "Sign In Page",
-        path: "/signin",
-        newTab: false,
-      },
-      {
-        id: 47,
-        title: "Sign Up Page",
-        path: "/signup",
-        newTab: false,
-      },
-      {
-        id: 48,
-        title: "Error Page",
-        path: "/error",
-        newTab: false,
-      },
-    ],
   },
 ];
 export default menuData;
