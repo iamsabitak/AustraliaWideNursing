@@ -10,7 +10,7 @@ const Features = () => {
             <h2 className="text-3xl font-bold text-blue-700 md:text-4xl">
               Welcome to Australia Wide Nursing
             </h2>
-            <p className="mt-2 text-gray-600 dark:text-white">
+            <p className="mt-2 text-black">
               Your Trusted Partner in Providing Exceptional Nurse Staffing
               Solutions for Aged Care and Hospital Settings Across Australia.
             </p>
