@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 import menuData from "./menuData";
+import Image from "next/image";
 
 const Header = () => {
   // Navbar toggle
@@ -48,30 +49,14 @@ const Header = () => {
     >
       <div className="container">
         <div className="relative -mx-8 flex items-center justify-between">
-          <div className="w-60 max-w-full px-4 xl:mr-16">
-            <Link
-              href="/"
-              className={`header-logo block w-full ${
-                sticky ? "py-5 lg:py-2" : "py-8"
-              } `}
-            >
-              <div className="flex items-center justify-between gap-4">
-                <div className="flex items-center gap-4">
-                  <div className="text-primary">logo</div>
-
-                  {/* Vertical Divider */}
-                  <div className="h-[60px] w-px bg-white"></div>
-                  {/* Text Section */}
-                  <div>
-                    <h1 className="text-primary text-[1.2rem] font-bold">
-                      AWNA
-                    </h1>
-                    <p className="text-[0.6rem] font-semibold text-white">
-                      AUSTRALIA WIDE NURSING AGENCY
-                    </p>
-                  </div>
-                </div>
-              </div>
+          <div className="w-60 max-w-full px-4 xl:mr-12">
+            <Link href="/" className={`header-logo block`}>
+              <Image
+                src="/logo/Australia-Wide-Nursing-Agency--Logo-336w-removebg-preview.png"
+                alt="logo"
+                width={200}
+                height={30}
+              />
             </Link>
           </div>
           <div className="flex w-full items-center justify-between px-4">

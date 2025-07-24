@@ -14,14 +14,14 @@ const Blog = () => {
 
   return (
     <section className="pt-[92px] pb-[120px]">
-      <div className="bg-opacity-80 relative h-92 overflow-hidden bg-black text-white">
+      <div className="bg-opacity-80 relative h-100 overflow-hidden bg-black text-white">
         <Image
-          src="/file.svg"
+          src="/Images/27-1920w.webp"
           alt="CTA Background"
           fill
-          className="absolute inset-0 z-0 h-100 object-cover object-center opacity-20 "
+          className="absolute inset-0 z-0 h-100 object-cover object-center opacity-20"
         />
-        <h3 className="p-20 text-center text-2xl font-bold md:text-5xl">
+        <h3 className="mt-15 p-20 text-center text-2xl font-bold md:text-5xl">
           Blogs
         </h3>
       </div>

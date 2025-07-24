@@ -4,22 +4,22 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Contact Page | Free Next.js Template for Startup and SaaS",
-  description: "This is Contact Page for Startup Nextjs Template",
+  title: "Australia Wide Nursing Agencyg",
+  description: "Excellence in Nursing, Compassion in Cares",
 };
 
 const ContactPage = () => {
   return (
     <>
-      <section id="about" className="pt-[92px] pb-[120px]">
-        <div className="bg-opacity-80 relative overflow-hidden bg-black text-white h-100">
+      <section id="contact" className="pt-[92px] pb-[120px]">
+        <div className="bg-opacity-80 relative h-100 overflow-hidden bg-black">
           <Image
-            src="/file.svg" // ✅ Replace with actual image path
+            src="/Images/healthcare+worker-1920w.webp"
             alt="CTA Background"
             fill
-            className="absolute inset-0 z-0 object-cover object-center opacity-20"
+            className="absolute inset-0 z-0 object-cover object-center opacity-30"
           />
-          <h3 className="p-20 text-center text-2xl font-bold md:text-5xl">
+          <h3 className="mt-20 p-20 text-center text-2xl font-bold text-white md:text-5xl">
             Contact Us
           </h3>
         </div>
@@ -27,14 +27,13 @@ const ContactPage = () => {
         <div className="container">
           <div className="-mx-4 flex flex-wrap items-center">
             <section className="py-16">
-              <div className="pt-20 text-center text-2xl font-light text-gray-800 md:text-3xl dark:text-white">
+              <div className="pt-20 text-center text-2xl font-light text-gray-800 md:text-3xl">
                 Have a question? We are here to help.{" "}
                 <div>Send us a message and we’ll be in touch.</div>
               </div>
               <Contact />
               <div className="py-16">
                 <div className="container mx-auto grid grid-cols-1 items-center gap-12 px-4 md:grid-cols-2">
-                  {/* Left: Contact Info */}
                   <div className="space-y-6">
                     <h2 className="text-3xl font-bold">Contact us</h2>
 
@@ -56,7 +55,7 @@ const ContactPage = () => {
                     {/* Social Icons */}
                     <div className="flex space-x-4 pt-4">
                       <a
-                        href="https://www.facebook.com"
+                        href="https://www.facebook.com/australiawidenursing"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="rounded-full bg-blue-600 p-3 text-white hover:bg-blue-700"
@@ -64,7 +63,7 @@ const ContactPage = () => {
                         <FaFacebookF />
                       </a>
                       <a
-                        href="https://www.instagram.com"
+                        href="https://www.instagram.com/auswidenursing/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 p-3 text-white"
@@ -72,7 +71,7 @@ const ContactPage = () => {
                         <FaInstagram />
                       </a>
                       <a
-                        href="https://www.linkedin.com"
+                        href="https://www.linkedin.com/company/australia-wide-nursing-agency/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="rounded-full bg-blue-700 p-3 text-white hover:bg-blue-800"

@@ -1,10 +1,6 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
-
 const Features = () => {
-  const [search, setSearch] = useState("");
-
   return (
     <>
       <section id="features" className="py-16 md:py-20 lg:py-16">
@@ -46,7 +42,7 @@ const Features = () => {
             {/* Image */}
             <div className="lg:w-1/2">
               <Image
-                src="/file.svg" // Change this to the correct path like /images/about-nursing.png
+                src="/file.svg" 
                 alt="Nursing Care"
                 width={600}
                 height={400}

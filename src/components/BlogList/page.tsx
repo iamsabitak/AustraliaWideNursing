@@ -2,6 +2,7 @@
 import React from "react";
 import { blogPosts } from "./bloglist";
 import Image from "next/image";
+import Link from "next/link";
 
 type Props = {
   searchQuery: string;
@@ -44,9 +45,11 @@ const BlogListCart = ({
               />
             </div>
             <div className="p-4">
-              <h3 className="text-lg font-semibold dark:text-gray-200">
-                {post.title}
-              </h3>
+              <Link href={`/blog/${post.slug}`}>
+                <h3 className="cursor-pointer text-lg font-semibold hover:underline dark:text-gray-200">
+                  {post.title}
+                </h3>
+              </Link>
               <p className="mt-2 line-clamp-4 text-sm dark:text-gray-400">
                 {post.desc}
               </p>
