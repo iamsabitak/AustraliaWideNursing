@@ -29,12 +29,12 @@ const BlogListCart = ({
   const hasMore = visibleCount < filteredPosts.length;
 
   return (
-    <div className="mx-auto mt-20 max-w-6xl">
+    <div className="mx-auto mt-20 max-w-6xl bg-white text-black">
       <div className="mt-20 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
         {visiblePosts.map((post, index) => (
           <div
             key={index}
-            className="dark:bg-dark overflow-hidden rounded-lg shadow transition-shadow duration-300 hover:shadow-md"
+            className="overflow-hidden rounded-lg shadow transition-shadow duration-300 hover:shadow-md"
           >
             <div className="relative h-52 w-full">
               <Image
@@ -46,11 +46,11 @@ const BlogListCart = ({
             </div>
             <div className="p-4">
               <Link href={`/blog/${post.slug}`}>
-                <h3 className="cursor-pointer text-lg font-semibold hover:underline dark:text-gray-200">
+                <h3 className="cursor-pointer text-lg font-semibold text-black">
                   {post.title}
                 </h3>
               </Link>
-              <p className="mt-2 line-clamp-4 text-sm dark:text-gray-400">
+              <p className="mt-2 line-clamp-4 text-sm text-gray-800">
                 {post.desc}
               </p>
             </div>

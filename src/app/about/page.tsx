@@ -30,17 +30,17 @@ const AboutPage = () => {
                 src="/About/jeshoots-com-l0j0DHVWcIE-unsplash.jpg"
                 alt="Director"
                 width={500}
-                height={500}
+                height={350}
                 className="h-auto w-full rounded object-cover shadow-lg"
               />
             </div>
             <div>
-              <h2 className="mb-4 text-2xl font-semibold text-gray-800 md:text-3xl dark:text-white">
+              <h2 className="mb-4 text-2xl font-semibold text-black md:text-3xl">
                 Connecting Hearts and Hands in Healthcare:
                 <br />
                 <span className="font-bold">Australia Wide Nursing Agency</span>
               </h2>
-              <p className="mb-4 leading-relaxed text-gray-700 dark:text-gray-300">
+              <p className="mb-4 leading-relaxed text-black">
                 As a seasoned director and registered nurse, I, Swastika
                 Neupane, bring over 5 years of invaluable experience and passion
                 for healthcare to the forefront with the launch of Australia
@@ -50,7 +50,7 @@ const AboutPage = () => {
                 horizons as a Registered Nurse in various settings including
                 hospitals and travel agency contracts across Queensland.
               </p>
-              <p className="leading-relaxed text-gray-700 dark:text-gray-300">
+              <p className="leading-relaxed text-black">
                 This wide-ranging experience has inspired me to establish a
                 nursing agency that prioritises quality care and supports
                 healthcare professionals. At Australia Wide Nursing, our mission
@@ -66,10 +66,10 @@ const AboutPage = () => {
           {/* Healthcare Managers Section */}
           <div className="mx-25 my-18 grid grid-cols-1 items-center gap-20 md:grid-cols-2">
             <div>
-              <h3 className="mb-3 text-3xl font-semibold text-gray-800 dark:text-white">
+              <h3 className="mb-3 text-3xl font-semibold text-black">
                 For Healthcare Managers
               </h3>
-              <p className="mb-6 text-gray-700 dark:text-gray-300">
+              <p className="mb-6 text-black">
                 We understand the critical need for reliable, skilled, and
                 compassionate nursing staff to ensure the smooth operation of
                 your facilities. Australia Wide Nursing is here to support you

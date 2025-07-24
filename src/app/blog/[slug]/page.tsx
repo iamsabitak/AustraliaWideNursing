@@ -41,7 +41,7 @@ const BlogDetail = () => {
         </p>
       </div>
       {/* Blog Content */}
-      <div className="max-w-8xl relative z-10 mx-auto -mt-16 bg-white p-6 shadow-lg md:p-12">
+      <div className="max-w-8xl relative z-10 mx-auto -mt-16 bg-white p-6 text-black shadow-lg md:p-12">
         {blogPost.content.map((section, idx) => (
           <div key={idx} className="mb-8">
             <h2 className="mb-2 px-60 text-2xl font-semibold">

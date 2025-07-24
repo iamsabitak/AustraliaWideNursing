@@ -17,7 +17,7 @@ const Features = () => {
           </div>
 
           {/* Content Section */}
-          <div className="flex flex-col items-center gap-12 lg:flex-row">
+          <div className="flex flex-col items-center gap-15 pt-5 lg:flex-row">
             {/* Text */}
             <div className="lg:w-1/2">
               <div className="border-primary mb-4 border-l-4 pl-4">
@@ -42,7 +42,7 @@ const Features = () => {
             {/* Image */}
             <div className="lg:w-1/2">
               <Image
-                src="/file.svg" 
+                src="/Images/26-1920w.webp"
                 alt="Nursing Care"
                 width={600}
                 height={400}
