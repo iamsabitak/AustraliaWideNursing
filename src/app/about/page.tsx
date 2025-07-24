@@ -106,10 +106,10 @@ const AboutPage = () => {
               />
             </div>
             <div className="order-1 md:order-2">
-              <h3 className="mb-3 text-3xl font-semibold text-gray-800 dark:text-white">
+              <h3 className="mb-3 text-3xl font-semibold text-black">
                 For Nurses
               </h3>
-              <p className="mb-6 text-gray-700 dark:text-gray-300">
+              <p className="mb-6 text-black">
                 We offer a supportive and enriching environment where your
                 expertise and dedication are valued. Our goal is to put our
                 nurses first by providing the support and work environment they

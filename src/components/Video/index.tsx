@@ -41,7 +41,7 @@ const FeatureGrid: FC = () => {
   return (
     <section className="py-16 md:py-20 lg:py-16">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="mx-auto mb-4 max-w-4xl text-center text-3xl font-medium">
+        <h2 className="mx-auto mb-4 max-w-4xl text-center text-3xl font-medium text-shadow-black">
           Our commitment to quality & reliability ensures that you receive
           top-notch professionals for your Healthcare Team. Here's what you can
           expect
