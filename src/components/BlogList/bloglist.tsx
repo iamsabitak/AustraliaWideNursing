@@ -1,6 +1,3 @@
-import { title } from "process";
-import { date } from "yup";
-
 export const blogPosts = [
   {
     title: "From AIN to RN: Career Pathways in Nursing Through Agency Work",
