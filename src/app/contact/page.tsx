@@ -1,12 +1,6 @@
 import Contact from "@/components/Contact";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import { Metadata } from "next";
 import Image from "next/image";
-
-export const metadata: Metadata = {
-  title: "Australia Wide Nursing Agencyg",
-  description: "Excellence in Nursing, Compassion in Cares",
-};
 
 const ContactPage = () => {
   return (
@@ -23,7 +17,6 @@ const ContactPage = () => {
             Contact Us
           </h3>
         </div>
-
         <div className="container">
           <div className="-mx-4 flex flex-wrap items-center">
             <section className="py-16">

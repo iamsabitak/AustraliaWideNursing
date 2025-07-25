@@ -59,19 +59,19 @@ const menuData: Menu[] = [
       {
         id: 41,
         title: " Registered Nurse",
-        path: "/",
+        path: "/RegisteredNursesJob",
         newTab: false,
       },
       {
         id: 42,
         title: "Enrolled Nurse",
-        path: "/",
+        path: "/JobSeekerEnrolledNurse",
         newTab: false,
       },
       {
         id: 43,
         title: "AIN",
-        path: "/",
+        path: "/JobSeekerAIN",
         newTab: false,
       },
     ],

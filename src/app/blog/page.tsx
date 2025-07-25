@@ -33,7 +33,7 @@ const Blog = () => {
             value={searchQuery}
             onChange={handleSearchChange}
             placeholder="Search the Blog"
-            className="w-full max-w-md border border-gray-300 px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+            className="w-full max-w-md border border-gray-300 px-4 py-2 text-black focus:ring-2 focus:ring-blue-500 focus:outline-none"
           />
         </div>
 
