@@ -50,9 +50,9 @@ const JobCards = () => {
             {jobs.map((job) => (
               <div
                 key={job.id}
-                className="h-110 w-105 cursor-pointer justify-center rounded-2xl bg-white p-10 text-black transition duration-300 hover:bg-gray-100"
+                className="bg-blue h-110 w-105 cursor-pointer justify-center rounded-2xl p-10 text-white transition duration-300 hover:bg-blue-800"
               >
-                <p className="mb-2 text-sm text-gray-500">{job.location}</p>
+                <p className="mb-2 text-sm text-gray-200">{job.location}</p>
                 <p className="mb-3 text-sm dark:text-gray-100">{job.country}</p>
 
                 <h3 className="text-primary mb-4 text-xl font-bold">

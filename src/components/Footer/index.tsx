@@ -6,7 +6,7 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
-      <footer className="bg-primary/100 relative text-black lg:pt-6">
+      <footer className="bg-primary/100 relative text-black lg:pt-10">
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-10 md:w-1/2 lg:w-4/12 xl:w-3/12">
@@ -89,10 +89,10 @@ const Footer = () => {
             <div className="w-full px-11 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-3/12">
               <div className="mb-12 lg:mb-16">
                 <h2 className="mb-7 text-xl font-bold text-black">Contact</h2>
-                <h3 className="hover:text-blue mb-4 inline-block cursor-pointer text-base font-bold text-black duration-300">
+                <h3 className="mb-4 inline-block text-base font-bold text-black duration-300">
                   Phone: <span className="font-light">1300 501 036</span>
                 </h3>
-                <h3 className="hover:text-blue mb-4 inline-block cursor-pointer text-base font-bold text-black duration-300">
+                <h3 className="mb-4 inline-block text-base font-bold text-black duration-300">
                   Email:{" "}
                   <span className="font-light">
                     {" "}

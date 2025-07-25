@@ -79,7 +79,7 @@ const AboutPage = () => {
                 only highly competent but also aligns with your organisational
                 values and standards.
               </p>
-              <button className="rounded bg-yellow-400 px-6 py-3 font-semibold text-black hover:bg-yellow-500">
+              <button className="cursor-pointer rounded bg-yellow-400 px-6 py-3 font-semibold text-black hover:bg-yellow-500">
                 Hire Expert Nurses Now
               </button>
             </div>
@@ -118,7 +118,7 @@ const AboutPage = () => {
                 professionally while making a meaningful impact on patients'
                 lives.
               </p>
-              <button className="rounded bg-yellow-400 px-6 py-3 font-semibold text-black hover:bg-yellow-500">
+              <button className="cursor-pointer rounded bg-yellow-400 px-6 py-3 font-semibold text-black hover:bg-yellow-500">
                 Join Our Community
               </button>
             </div>
@@ -143,7 +143,7 @@ const AboutPage = () => {
                 difference in the lives of those we serve.
               </p>
               <Link href={"/contact"}>
-                <button className="rounded bg-yellow-400 px-6 py-3 font-semibold text-black hover:bg-yellow-500">
+                <button className="cursor-pointer rounded bg-yellow-400 px-6 py-3 font-semibold text-black hover:bg-yellow-500">
                   Contact Us
                 </button>
               </Link>

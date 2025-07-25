@@ -30,7 +30,7 @@ const Contact = () => {
                       <input
                         type="text"
                         placeholder="Enter your name"
-                        className="border-stroke text-body-color focus:border-primary w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden"
+                        className="border-stroke focus:border-primary w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base text-black outline-hidden"
                       />
                     </div>
                   </div>
@@ -45,7 +45,7 @@ const Contact = () => {
                       <input
                         type="number"
                         placeholder="Enter your number"
-                        className="border-stroke text-body-color focus:border-primary w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden"
+                        className="border-stroke focus:border-primary w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base text-black outline-hidden"
                       />
                     </div>
                   </div>
@@ -54,14 +54,14 @@ const Contact = () => {
                     <div className="mb-8">
                       <label
                         htmlFor="email"
-                        className="text-dark mb-3 block text-sm font-medium"
+                        className="text-back mb-3 block text-sm font-medium"
                       >
                         Email
                       </label>
                       <input
                         type="email"
                         placeholder="Enter your email"
-                        className="border-stroke text-body-color focus:border-primary outline-hidde w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base"
+                        className="border-stroke focus:border-primary w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base text-black outline-hidden"
                       />
                     </div>
                   </div>
@@ -70,7 +70,7 @@ const Contact = () => {
                     <div className="mb-8">
                       <label
                         htmlFor="message"
-                        className="text-dark mb-3 block text-sm font-medium"
+                        className="text-back mb-3 block text-sm font-medium"
                       >
                         Message
                       </label>
@@ -78,12 +78,12 @@ const Contact = () => {
                         name="message"
                         rows={5}
                         placeholder="Enter your Message"
-                        className="border-stroke text-body-color focus:border-primary d w-full resize-none rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden"
+                        className="border-stroke text-blackr focus:border-primary d w-full resize-none rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden"
                       ></textarea>
                     </div>
                   </div>
                   <div className="w-full px-4">
-                    <button className="bg-primary shadow-submit hover:bg-primary/90 rounded-xs px-9 py-4 text-base font-medium">
+                    <button className="bg-primary shadow-submit hover:bg-primary/90 cursor-pointer rounded-xs px-9 py-4 text-base font-medium">
                       Send
                     </button>
                   </div>
