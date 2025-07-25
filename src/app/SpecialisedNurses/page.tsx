@@ -25,10 +25,9 @@ const SpecialisedNurses = () => {
       <div className="bg-opacity-80 relative h-100 overflow-hidden bg-black">
         <Image
           src="/Images/healthcare+worker-1920w.webp"
-          alt="/SpecialisedNurses"
-          width={500}
-          height={350}
-          className="h-auto w-full rounded object-cover shadow-lg"
+          alt="CTA Background"
+          fill
+          className="absolute inset-0 z-0 object-cover object-center opacity-20"
         />
         <h3 className="mt-20 p-20 text-center text-2xl font-bold text-white md:text-5xl">
           Specialised Nurses

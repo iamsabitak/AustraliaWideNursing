@@ -8,33 +8,29 @@ import { RiPsychotherapyFill } from "react-icons/ri";
 const features = [
   {
     icon: <FaUserDoctor size={32} />,
-    title: "Patient Assessment",
-    desc: "Conducting thorough health assessments and physical examinations.",
+    title: "Personal Care Assistancet",
+    desc: "Helping patients with bathing, dressing, and mobility..",
   },
   {
     icon: <FaClipboardCheck size={32} />,
-    title: "Care Planning",
-    desc: "Developing and implementing individualised care plans.",
+    title: "Feeding Support",
+    desc: "Assisting with meal preparation and feeding.",
   },
   {
     icon: <RiPsychotherapyFill size={32} />,
-    title: "Treatment Administration",
-    desc: "Administering medications and treatments accurately.",
+    title: "Emotional Support",
+    desc: "Offering companionship and emotional support to enhance patient quality of life.",
   },
   {
     icon: <FaChalkboardTeacher size={32} />,
-    title: "Patient Education",
-    desc: "Educating patients and families on health conditions and self-care.",
+    title: "Observation and Reporting",
+    desc: "Monitoring patient conditions and reporting any changes to the nursing team.",
   },
-  {
-    icon: <FaNotesMedical size={32} />,
-    title: "Clinical Documentation",
-    desc: "Maintaining precise and detailed patient records.",
-  },
+
   {
     icon: <FaBedPulse size={32} />,
-    title: "Supervisory Roles",
-    desc: "Leading and mentoring nursing teams to ensure high standards of care.",
+    title: "Basic Care Duties",
+    desc: "Performing tasks such as bed making, hygiene maintenance, and assisting with toileting.",
   },
 ];
 const AssistantsinNursing = () => {
@@ -48,19 +44,35 @@ const AssistantsinNursing = () => {
           className="absolute inset-0 z-0 object-cover object-center opacity-20"
         />
         <h3 className="mt-20 p-20 text-center text-2xl font-bold text-white md:text-5xl">
-          Registered Nurses
+          Assistants in Nursing
         </h3>
       </div>
 
       <div className="mx-auto bg-gray-100 px-30 pt-20 pb-20 text-center">
         <h1 className="mx-auto mb-4 max-w-4xl text-center text-3xl font-medium text-black">
-          Registered Nurses (RNs) in Aged Care
+          Assistants in Nursing (AINs) in Aged Care
         </h1>
         <p className="mx-auto mb-4 max-w-4xl text-center text-2xl font-light text-black">
-          At Australia Wide Nursing, our Registered Nurses (RNs) are essential
-          providers of comprehensive and compassionate care in both aged care
-          and hospital settings. Their key roles include:
+          At Australia Wide Nursing, our Assistants in Nursing (AINs) are
+          dedicated to providing hands-on care and support in both aged care and
+          hospital settings. Their key roles include:
         </p>
+        <div className="mt-10 flex justify-center">
+          <div className="mt-10 grid justify-center gap-10 md:grid-cols-2 lg:grid-cols-3">
+            {features.map((feature, index) => (
+              <div
+                key={index}
+                className="rounded-lg bg-white px-7 py-15 text-black shadow-md transition-transform hover:scale-105"
+              >
+                <div className="mb-5 flex justify-center text-blue-700">
+                  {feature.icon}
+                </div>
+                <h3 className="pb-4 text-xl font-semibold">{feature.title}</h3>
+                <p className="text-lg font-light">{feature.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
 
       <div className="bg-opacity-80 relative h-80 overflow-hidden bg-black p-15 text-white">
@@ -72,12 +84,12 @@ const AssistantsinNursing = () => {
         />
         <div className="relative z-10 mx-auto max-w-2xl space-y-6 text-center">
           <p className="text-lg">
-            Our RNs bring versatility, experience, and reliability, ensuring
-            that your patients receive the best possible care.
+            Our AINs are compassionate, reliable, and essential in ensuring the
+            comfort and well-being of your patients.
           </p>
           <Link href={"/contact"}>
             <button className="cursor-pointer rounded bg-yellow-400 px-6 py-3 font-semibold text-black hover:bg-yellow-500">
-              Hire Expert Nurses Now
+              Partner With Us
             </button>
           </Link>
         </div>
