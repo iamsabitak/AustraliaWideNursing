@@ -46,19 +46,23 @@ const FeatureGrid: FC = () => {
           top-notch professionals for your Healthcare Team. Here's what you can
           expect
         </h2>
-
-        <div className="mt-15 grid grid-cols-1 gap-6 md:grid-cols-3">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className="h-44 rounded-lg bg-white p-6 text-black shadow-md transition-transform hover:scale-105"
-            >
-              <div className="mb-4 flex justify-center text-blue-700">
-                {feature.icon}
+        <div className="px-26 py-10">
+          <div className="mt-15 grid grid-cols-1 gap-6 md:grid-cols-3">
+            {features.map((feature, index) => (
+              <div
+                key={index}
+                className={`rounded-xl p-6 text-left shadow-md ${
+                  index % 2 === 1 ? "bg-yellow-400 text-black" : "bg-white"
+                }`}
+                // className="h-44 rounded-lg bg-white p-6 text-black shadow-md transition-transform hover:scale-105"
+              >
+                <div className="mb-4 flex justify-center text-blue-700">
+                  {feature.icon}
+                </div>
+                <h3 className="text-lg font-semibold">{feature.title}</h3>
               </div>
-              <h3 className="text-lg font-semibold">{feature.title}</h3>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
