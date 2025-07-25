@@ -4,7 +4,6 @@ import React from "react";
 import { FaNotesMedical, FaChalkboardTeacher } from "react-icons/fa";
 import { FaUserDoctor, FaBedPulse, FaClipboardCheck } from "react-icons/fa6";
 import { RiPsychotherapyFill } from "react-icons/ri";
-
 const features = [
   {
     icon: <FaUserDoctor size={32} />,
@@ -37,7 +36,7 @@ const features = [
     desc: "Leading and mentoring nursing teams to ensure high standards of care.",
   },
 ];
-const AssistantsinNursing = () => {
+const  EnrolledNurses = () => {
   return (
     <section id="contact" className="pt-[92px]">
       <div className="bg-opacity-80 relative h-100 overflow-hidden bg-black">
@@ -86,4 +85,4 @@ const AssistantsinNursing = () => {
   );
 };
 
-export default AssistantsinNursing;
+export default  EnrolledNurses;

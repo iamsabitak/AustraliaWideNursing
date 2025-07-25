@@ -54,14 +54,16 @@ const RegisteredNurses = () => {
       </div>
 
       <div className="mx-auto bg-gray-100 px-30 pt-20 pb-20 text-center">
-        <h1 className="mx-auto mb-4 max-w-4xl text-center text-3xl font-medium text-black">
-          Registered Nurses (RNs) in Aged Care
-        </h1>
-        <p className="mx-auto mb-4 max-w-4xl text-center text-2xl font-light text-black">
-          At Australia Wide Nursing, our Registered Nurses (RNs) are essential
-          providers of comprehensive and compassionate care in both aged care
-          and hospital settings. Their key roles include:
-        </p>
+        <div className="mx-auto max-w-5xl px-4 text-center">
+          <h2 className="mb-4 text-3xl font-semibold text-black md:text-4xl">
+            Registered Nurses (RNs) in Aged Care
+          </h2>
+          <p className="text-lg text-gray-700">
+            At Australia Wide Nursing, our Registered Nurses (RNs) are essential
+            providers of comprehensive and compassionate care in both aged care
+            and hospital settings. Their key roles include:
+          </p>
+        </div>
 
         <div className="mt-15 grid grid-cols-1 gap-10 md:grid-cols-3">
           {features.map((feature, index) => (
