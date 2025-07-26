@@ -1,6 +1,5 @@
 import JobCards from "@/components/Testimonials";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import { benefits } from "./Benefits";
 import { qualifications } from "./qualifications";
