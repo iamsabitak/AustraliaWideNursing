@@ -3,7 +3,7 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <>
-      <section id="about" className="pt-[92px] pb-[120px]">
+      <section id="about" className="pt-[92px] pb-[20px]">
         <div className="bg-opacity-80 relative h-200 overflow-hidden bg-black">
           <Image
             src="/Images/healthcare+workers-1920w.webp"

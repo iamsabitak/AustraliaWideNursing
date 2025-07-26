@@ -12,6 +12,7 @@ const Header = () => {
   const navbarToggleHandler = () => {
     setNavbarOpen(!navbarOpen);
   };
+  const [openMenu, setOpenMenu] = useState<number | null>(null);
 
   // Sticky Navbar
   const [sticky, setSticky] = useState(false);
@@ -39,7 +40,6 @@ const Header = () => {
   const usePathName = usePathname();
 
   return (
-    // <div className="header-wrapper text-white">
     <header
       className={`header top-0 left-0 z-40 flex h-23 w-full items-center ${
         sticky
@@ -94,26 +94,24 @@ const Header = () => {
                 <ul className="block lg:flex lg:space-x-12">
                   {menuData.map((menuItem, index) => (
                     <li key={index} className="group relative">
-                      {menuItem.path ? (
+                      <div
+                        onClick={() => handleSubmenu(index)}
+                        onMouseEnter={() => setOpenIndex(index)}
+                        onMouseLeave={() => setOpenIndex(-1)}
+                        className="cursor-pointer"
+                      >
                         <Link
-                          href={menuItem.path}
-                          className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
+                          href={menuItem.path || "#"}
+                          className={`flex items-center justify-between py-2 text-base text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
                             usePathName === menuItem.path
                               ? "text-primary"
-                              : "hover:text-primary text-white"
+                              : "hover:text-primary"
                           }`}
                         >
                           {menuItem.title}
-                        </Link>
-                      ) : (
-                        <>
-                          <p
-                            onClick={() => handleSubmenu(index)}
-                            className="group-hover:text-primary flex cursor-pointer items-center justify-between py-2 text-base text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 dark:text-white/70 dark:group-hover:text-white"
-                          >
-                            {menuItem.title}
-                            <span className="pl-3">
-                              <svg width="25" height="24" viewBox="0 0 25 24">
+                          {menuItem.submenu && (
+                            <span className="pl-2">
+                              <svg width="20" height="20" viewBox="0 0 25 24">
                                 <path
                                   fillRule="evenodd"
                                   clipRule="evenodd"
@@ -122,25 +120,28 @@ const Header = () => {
                                 />
                               </svg>
                             </span>
-                          </p>
+                          )}
+                        </Link>
 
+                        {/* Submenu */}
+                        {menuItem.submenu && (
                           <div
-                            className={`submenu relative top-full left-0 rounded-sm transition-[top] duration-300 group-hover:opacity-100 lg:invisible lg:absolute lg:top-[110%] lg:block lg:w-[250px] lg:p-2.5 lg:opacity-0 lg:group-hover:visible lg:group-hover:top-full ${
+                            className={`submenu bg-blue absolute left-0 z-50 mt-1 w-[250px] rounded-sm p-2.5 text-white shadow-lg transition-all duration-300 ${
                               openIndex === index ? "block" : "hidden"
-                            }`}
+                            } lg:group-hover:block`}
                           >
-                            {menuItem.submenu.map((submenuItem, index) => (
+                            {menuItem.submenu.map((submenuItem, subIndex) => (
                               <Link
                                 href={submenuItem.path}
-                                key={index}
-                                className="hover:text-primary bg-blue block py-3 text-sm text-white lg:px-3"
+                                key={subIndex}
+                                className="hover: hover:text-primary block px-3 py-2 text-sm"
                               >
                                 {submenuItem.title}
                               </Link>
                             ))}
                           </div>
-                        </>
-                      )}
+                        )}
+                      </div>
                     </li>
                   ))}
                 </ul>
@@ -150,7 +151,6 @@ const Header = () => {
         </div>
       </div>
     </header>
-    // </div>
   );
 };
 

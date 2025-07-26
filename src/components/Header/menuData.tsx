@@ -17,6 +17,7 @@ const menuData: Menu[] = [
   {
     id: 3,
     title: " Employers",
+    path: "/Employers",
     newTab: false,
     submenu: [
       {
@@ -54,6 +55,7 @@ const menuData: Menu[] = [
   {
     id: 4,
     title: "Job Seekers",
+    path: "/JobSeekers",
     newTab: false,
     submenu: [
       {

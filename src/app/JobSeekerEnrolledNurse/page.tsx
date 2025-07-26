@@ -2,7 +2,7 @@ import JobCards from "@/components/Testimonials";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { MdAssignmentInd, MdMedicalServices, MdElderly } from "react-icons/md";
+import { qualifications } from "./qualifications";
 const RegisteredNursesJob = () => {
   return (
     <section id="contact" className="pt-[92px]">
@@ -37,59 +37,30 @@ const RegisteredNursesJob = () => {
               Essential Qualifications for Enrolled Nurses at Australia Wide
               Nursing
             </h3>
-            <p className="mb-6 text-gray-700">
-              At Australia Wide Nursing, we are committed to enhancing the
-              quality of healthcare through the placement of highly skilled
-              Enrolled Nurses. Join us in a career where your expertise,
-              passion, and dedication can make a real difference.
-            </p>
-
-            {/* Qualification 1 */}
-            <div className="mb-6 flex items-start gap-4">
-              <MdAssignmentInd className="text-6xl text-blue-700" />
-              <div>
-                <h4 className="text-xl font-semibold text-blue-800">
-                  Professional Registration
-                </h4>
-                <ul className="mt-2 list-inside list-disc text-gray-700">
-                  <li>Diploma in Nursing</li>
-                  <li>
-                    Maintain current registration with AHPRA as an Enrolled
-                    Nurse, demonstrating your commitment to delivering premier
-                    healthcare services.
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Qualification 2 */}
-            <div className="mb-6 flex items-start gap-4">
-              <MdMedicalServices className="text-6xl text-blue-700" />
-              <div>
-                <h4 className="text-xl font-semibold text-blue-800">
-                  Clinical Expertise
-                </h4>
-                <p className="mt-2 text-gray-700">
-                  Utilise your skills in key areas such as medication
-                  administration, wound care, and patient monitoring to provide
-                  comprehensive and confident care.
-                </p>
-              </div>
-            </div>
-
-            {/* Qualification 3 */}
-            <div className="mb-6 flex items-start gap-4">
-              <MdElderly className="text-6xl text-blue-700" />
-              <div>
-                <h4 className="text-xl font-semibold text-blue-800">
-                  Specialised Aged Care Experience
-                </h4>
-                <p className="mt-2 text-gray-700">
-                  Bring your prior experience in aged care to the forefront,
-                  utilising your specialised skills to offer compassionate and
-                  tailored care to our senior community.
-                </p>
-              </div>
+            
+            <div>
+              {qualifications.map((item, index) => {
+                const Icon = item.icon;
+                return (
+                  <div key={index} className="mb-6 flex items-start gap-4">
+                    <Icon className="text-6xl text-blue-700" />
+                    <div>
+                      <h4 className="text-xl font-semibold text-blue-800">
+                        {item.title}
+                      </h4>
+                      {Array.isArray(item.desc) ? (
+                        <ul className="mt-2 list-inside list-disc text-gray-700">
+                          {item.desc.map((point, i) => (
+                            <li key={i}>{point}</li>
+                          ))}
+                        </ul>
+                      ) : (
+                        <p className="mt-2 text-gray-700">{item.desc}</p>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
 
