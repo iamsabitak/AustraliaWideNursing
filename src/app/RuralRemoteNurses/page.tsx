@@ -31,21 +31,28 @@ const RuralRemoteNurses = () => {
       </div>
 
       <div className="mx-auto bg-gray-100 px-30 pt-20 pb-20 text-center">
-        <p className="mx-auto mb-4 max-w-4xl text-center text-2xl font-light text-black">
-          Australia Wide Nursing is committed to delivering exceptional nursing
-          services to the rural and remote regions of Queensland, Victoria, and
-          New South Wales. Our roster of highly skilled nurses is ready to
-          support healthcare facilities and communities in these areas.
-        </p>
-        <h3 className="mt-10 p-20 text-center text-2xl font-semibold text-black md:text-4xl">
+        <div className="mx-auto max-w-5xl px-4 text-center">
+          <p className="text-lg text-gray-700">
+            Australia Wide Nursing is committed to delivering exceptional
+            nursing services to the rural and remote regions of Queensland,
+            Victoria, and New South Wales. Our roster of highly skilled nurses
+            is ready to support healthcare facilities and communities in these
+            areas.
+          </p>
+        </div>
+
+        <h3 className="pt-9 text-center text-2xl font-semibold text-black md:text-4xl">
           Our Nursing Specialties:
         </h3>
         <div className="mt-10 flex justify-center">
-          <div className="mt-10 grid justify-center gap-18 md:grid-cols-2 lg:grid-cols-2">
+          <div className="mt-5 grid justify-center gap-18 md:grid-cols-2 lg:grid-cols-2">
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="rounded-lg bg-gray-100 px-7 py-15 text-black shadow-md transition-transform hover:scale-105"
+                className={`rounded-xl p-6 text-left text-black shadow-md transition-transform hover:scale-105 ${
+                  index % 2 === 1 ? "bg-yellow-400" : "bg-white"
+                }`}
+                // className="rounded-lg bg-gray-100 px-7 py-15 text-black shadow-md transition-transform hover:scale-105"
               >
                 <div className="mb-5 flex justify-center text-blue-700">
                   {feature.icon}
@@ -67,7 +74,8 @@ const RuralRemoteNurses = () => {
         />
         <div className="relative z-10 mx-auto max-w-2xl space-y-6 text-center">
           <p className="text-lg">
-           Hire with confidence, knowing that your patients are in capable and caring hands with Australia Wide Nursing.
+            Hire with confidence, knowing that your patients are in capable and
+            caring hands with Australia Wide Nursing.
           </p>
           <Link href={"/contact"}>
             <button className="cursor-pointer rounded bg-yellow-400 px-6 py-3 font-semibold text-black hover:bg-yellow-500">

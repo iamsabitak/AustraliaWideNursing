@@ -21,7 +21,7 @@ const Features = () => {
             {/* Text */}
             <div className="lg:w-1/2">
               <div className="border-primary mb-4 border-l-4 pl-4">
-                <h3 className="text-2xl font-bold">
+                <h3 className="text-2xl font-bold text-black">
                   Why choose Australia Wide Nursing Agency?
                 </h3>
               </div>

@@ -36,11 +36,10 @@ const AboutPage = () => {
             </div>
             <div>
               <h2 className="mb-4 text-2xl font-semibold text-black md:text-3xl">
-                Connecting Hearts and Hands in Healthcare:
-                <br />
-                <span className="font-bold">Australia Wide Nursing Agency</span>
+                Connecting Hearts and Hands in Healthcare: Australia Wide
+                Nursing Agency
               </h2>
-              <p className="mb-4 leading-relaxed text-black">
+              <p className="mb-4 leading-relaxed text-gray-700">
                 As a seasoned director and registered nurse, I, Swastika
                 Neupane, bring over 5 years of invaluable experience and passion
                 for healthcare to the forefront with the launch of Australia
@@ -50,7 +49,7 @@ const AboutPage = () => {
                 horizons as a Registered Nurse in various settings including
                 hospitals and travel agency contracts across Queensland.
               </p>
-              <p className="leading-relaxed text-black">
+              <p className="leading-relaxed text-gray-700">
                 This wide-ranging experience has inspired me to establish a
                 nursing agency that prioritises quality care and supports
                 healthcare professionals. At Australia Wide Nursing, our mission
@@ -69,7 +68,7 @@ const AboutPage = () => {
               <h3 className="mb-3 text-3xl font-semibold text-black">
                 For Healthcare Managers
               </h3>
-              <p className="mb-6 text-black">
+              <p className="mb-6 text-gray-700">
                 We understand the critical need for reliable, skilled, and
                 compassionate nursing staff to ensure the smooth operation of
                 your facilities. Australia Wide Nursing is here to support you
@@ -109,7 +108,7 @@ const AboutPage = () => {
               <h3 className="mb-3 text-3xl font-semibold text-black">
                 For Nurses
               </h3>
-              <p className="mb-6 text-black">
+              <p className="mb-6 text-gray-700">
                 We offer a supportive and enriching environment where your
                 expertise and dedication are valued. Our goal is to put our
                 nurses first by providing the support and work environment they

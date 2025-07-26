@@ -50,21 +50,25 @@ const EnrolledNurses = () => {
       </div>
 
       <div className="mx-auto bg-gray-100 px-30 pt-10 pb-20 text-center">
-        <h3 className="pt-10 text-center text-2xl font-semibold text-black md:text-4xl">
-          Enrolled Nurses (ENs) in Aged Care
-        </h3>
-        <p className="mx-auto mt-4 max-w-4xl text-center text-2xl font-light text-black">
-          At Australia Wide Nursing, our Enrolled Nurses (ENs) provide essential
-          support in both aged care and hospital settings. Their key roles
-          include:
-        </p>
-
+        <div className="mx-auto max-w-5xl px-4 text-center">
+          <h2 className="mb-4 text-3xl font-semibold text-black md:text-4xl">
+            Enrolled Nurses (ENs) in Aged Care
+          </h2>
+          <p className="text-lg text-gray-700">
+            At Australia Wide Nursing, our Enrolled Nurses (ENs) provide
+            essential support in both aged care and hospital settings. Their key
+            roles include:
+          </p>
+        </div>
         <div className="mt-10 flex justify-center">
           <div className="mt-10 grid justify-center gap-10 md:grid-cols-2 lg:grid-cols-3">
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="rounded-lg bg-gray-100 px-7 py-15 text-black shadow-md transition-transform hover:scale-105"
+                className={`rounded-xl p-6 text-left text-black shadow-md transition-transform hover:scale-105 ${
+                  index % 2 === 1 ? "bg-yellow-400" : "bg-white"
+                }`}
+                // className="rounded-lg bg-gray-100 px-7 py-15 text-black shadow-md transition-transform hover:scale-105"
               >
                 <div className="mb-5 flex justify-center text-blue-700">
                   {feature.icon}

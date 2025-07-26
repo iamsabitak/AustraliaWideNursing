@@ -2,8 +2,8 @@ import JobCards from "@/components/Testimonials";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaNotesMedical, FaChalkboardTeacher } from "react-icons/fa";
-import { FaUserDoctor, FaBedPulse, FaClipboardCheck } from "react-icons/fa6";
+import { FaChalkboardTeacher } from "react-icons/fa";
+import { FaUserDoctor, FaClipboardCheck } from "react-icons/fa6";
 import { RiPsychotherapyFill } from "react-icons/ri";
 
 const features = [
@@ -44,14 +44,14 @@ const RegisteredNursesJob = () => {
         </h3>
       </div>
 
-      <div className="mx-25 my-18 bg-white text-center sm:px-10 md:px-20">
+      <div className="mx-15 my-18 bg-white text-center sm:px-10 md:px-20">
         <div className="grid grid-cols-1 items-center gap-20 md:grid-cols-2">
           <div>
             <h3 className="mb-3 text-3xl font-semibold text-black">
               Australia Wide Nursing: Elevating Standards in Aged Care and
               Hospital Staffing
             </h3>
-            <p className="mb-6 text-black">
+            <p className="mb-6 text-gray-700">
               At Australia Wide Nursing , we are committed to enhancing the
               quality of aged care through the placement of highly skilled
               Registered Nurses. Join us in a career where your expertise,
@@ -69,23 +69,29 @@ const RegisteredNursesJob = () => {
             />
           </div>
         </div>
-        <div className="mt-20 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-20 grid justify-center gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {features.map((feature, index) => (
             <div
               key={index}
-              className={`rounded-xl p-6 text-left shadow-md ${
-                index % 2 === 1 ? "bg-yellow-400 text-black" : "bg-white"
+              className={`rounded-xl p-6 text-left text-black shadow-md transition-transform hover:scale-105 ${
+                index % 2 === 1 ? "bg-yellow-400" : "bg-white"
               }`}
             >
-              <div className="mb-4 text-3xl text-blue-700">{feature.icon}</div>
-              <h3 className="mb-2 text-xl font-bold">{feature.title}</h3>
-              <p className="text-base font-light">{feature.desc}</p>
+              <div className="mb-4 ml-17 justify-center text-3xl text-blue-700">
+                {feature.icon}
+              </div>
+              <h3 className="mb-2 text-center text-xl font-bold">
+                {feature.title}
+              </h3>
+              <p className="text-md text-center font-light text-gray-700">
+                {feature.desc}
+              </p>
             </div>
           ))}
         </div>
       </div>
       <JobCards />
-      <div className="relative z-10 mx-auto flex max-w-6xl gap-16 space-y-6 p-15 text-center">
+      <div className="relative z-10 mx-auto flex max-w-6xl gap-16 space-y-6 pt-7 text-center">
         <p className="text-blue text-xl font-semibold">
           Join Australia Wide Nursing and Be a Part of a Team Where Your Skills
           and Compassion Are Not Just Valued but Celebrated.

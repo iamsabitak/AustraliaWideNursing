@@ -69,13 +69,18 @@ const RegisteredNurses = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="rounded-lg bg-white px-7 py-10 text-black shadow-md transition-transform hover:scale-105"
+              className={`rounded-xl p-6 text-left text-black shadow-md transition-transform hover:scale-105 ${
+                index % 2 === 1 ? "bg-yellow-400" : "bg-white"
+              }`}
+              // className="rounded-lg bg-white px-7 py-10 text-black shadow-md transition-transform hover:scale-105"
             >
               <div className="mb-5 flex justify-center text-blue-700">
                 {feature.icon}
               </div>
-              <h3 className="pb-4 text-xl font-semibold">{feature.title}</h3>
-              <p className="text-lg font-light">{feature.desc}</p>
+              <h3 className="pb-4 text-center text-xl font-semibold">
+                {feature.title}
+              </h3>
+              <p className="text-md text-center font-light">{feature.desc}</p>
             </div>
           ))}
         </div>

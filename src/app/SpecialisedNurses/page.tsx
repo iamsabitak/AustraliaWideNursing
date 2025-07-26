@@ -49,7 +49,9 @@ const SpecialisedNurses = () => {
         {/* Main Grid */}
         <div className="mx-25 my-18 grid grid-cols-1 items-center gap-20 md:grid-cols-2">
           <div>
-            <h3 className="mb-6 text-2xl font-bold">Areas of Expertise</h3>
+            <h3 className="mb-6 text-2xl font-bold text-black">
+              Areas of Expertise
+            </h3>
             <div className="grid grid-cols-1 gap-x-10 gap-y-4 text-left md:grid-cols-2">
               {expertise.map((item, index) => (
                 <div key={index} className="flex items-start gap-3">
